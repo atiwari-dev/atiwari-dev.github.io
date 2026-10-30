@@ -14,13 +14,13 @@
   const CONFIG = {
     // Replace with your actual usernames / links
     social: {
-      github: 'https://github.com/YOUR_USERNAME',
-      x: 'https://x.com/YOUR_USERNAME',
-      email: 'mailto:hello@example.com',
+      github: 'https://github.com/atiwari-dev',
+      x: 'https://x.com/IlluminaughtyIN',
+      email: 'mailto:ashuxtosh@gmail.com',
     },
 
     // X display handle for the writing section
-    xHandle: '@YOUR_USERNAME',
+    xHandle: '@IlluminaughtyIN',
 
     // Particle count for the hero background (keep low for performance)
     particleCount: 28,
@@ -175,12 +175,12 @@
 
     // Fade in other hero elements
     const fadeTargets = [
-      { el: '.hero__status',      delay: 0.1 },
-      { el: '.hero__tagline',     delay: 0.8 },
+      { el: '.hero__status', delay: 0.1 },
+      { el: '.hero__tagline', delay: 0.8 },
       { el: '.hero__description', delay: 1.0 },
-      { el: '.hero__terminal',    delay: 1.15 },
-      { el: '.hero__actions',     delay: 1.3 },
-      { el: '.hero__socials',     delay: 1.45 },
+      { el: '.hero__terminal', delay: 1.15 },
+      { el: '.hero__actions', delay: 1.3 },
+      { el: '.hero__socials', delay: 1.45 },
     ];
 
     fadeTargets.forEach(({ el, delay }) => {
