@@ -1,290 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO -->
-  <title>Ashutosh — Software Engineer & Developer</title>
-  <meta name="description"
-    content="Ashutosh is a software engineer and data engineer who builds products, solves problems and explores how technology works.">
-  <meta name="author" content="Ashutosh">
-
-  <!-- Open Graph -->
+  <title>Ashutosh Tiwari | AI and Large-Scale Systems</title>
+  <meta name="description" content="Ashutosh Tiwari is an engineer and founder. He builds AI systems, RAG assistants, data platforms and secure cloud infrastructure.">
+  <meta name="author" content="Ashutosh Tiwari">
+  <meta name="theme-color" content="#0b0b0d">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Ashutosh — Software Engineer & Developer">
-  <meta property="og:description"
-    content="Developer portfolio — building things, solving problems and exploring how technology works.">
+  <meta property="og:title" content="Ashutosh Tiwari | AI and Large-Scale Systems">
+  <meta property="og:description" content="Engineer and founder. I design and build AI, data and cloud systems.">
   <meta property="og:url" content="https://atiwari-dev.github.io/">
-  <meta property="og:image" content="https://atiwari-dev.github.io/og-image.png">
-
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ashutosh — Software Engineer & Developer">
-  <meta name="twitter:description"
-    content="Developer portfolio — building things, solving problems and exploring how technology works.">
-
-  <!-- Theme -->
-  <meta name="theme-color" content="#05070D">
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌘</text></svg>">
-
-  <!-- Fonts -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ashutosh Tiwari | AI and Large-Scale Systems">
+  <meta name="twitter:description" content="Engineer and founder. I design and build AI, data and cloud systems.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23141414'/><text x='50' y='66' font-family='monospace' font-weight='700' font-size='44' fill='%23f2f1ed' text-anchor='middle'>AT</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
-    rel="stylesheet">
-
-  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <script>
+    // Set theme before paint to avoid a flash.
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="backdrop" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
 
-  <!-- Skip link -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <!-- ========================================
-       NAVIGATION
-       ======================================== -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="container nav__inner">
-      <a href="#" class="nav__logo" aria-label="Ashutosh — Home">ashutosh.</a>
-
-      <div class="nav__links">
-        <a href="#about" class="nav__link">About</a>
-        <a href="#projects" class="nav__link">Projects</a>
-        <a href="#writing" class="nav__link">Writing</a>
-        <a href="#contact" class="nav__link">Contact</a>
+  <!-- Nav -->
+  <nav class="nav" aria-label="Main">
+    <div class="container">
+      <div class="nav__inner glass">
+        <a href="#top" class="logo" aria-label="Home">AT</a>
+        <div class="nav__links">
+          <a href="#ai">AI work</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#capabilities">Capabilities</a><a href="#contact">Contact</a>
+        </div>
+        <div class="nav__right">
+          <button class="icon-btn" id="theme" aria-label="Toggle theme">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          </button>
+          <button class="icon-btn menu-btn" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="mobile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
+          </button>
+        </div>
       </div>
-
-      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-
-    <div class="nav__mobile" id="mobile-menu" role="menu">
-      <a href="#about" role="menuitem">About</a>
-      <a href="#projects" role="menuitem">Projects</a>
-      <a href="#writing" role="menuitem">Writing</a>
-      <a href="#contact" role="menuitem">Contact</a>
+      <div class="mobile glass" id="mobile" hidden>
+        <a href="#ai">AI work</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#capabilities">Capabilities</a><a href="#contact">Contact</a>
+      </div>
     </div>
   </nav>
 
-  <!-- ========================================
-       HERO
-       ======================================== -->
-  <main id="main-content">
-    <section class="hero" id="hero">
-      <!-- Background layers -->
-      <div class="hero__bg" aria-hidden="true">
-        <div class="hero__glow"></div>
-        <div class="hero__grid"></div>
-        <div class="hero__particles"></div>
-      </div>
-
-      <div class="container hero__content">
-        <!-- Availability indicator -->
-        <div class="hero__status">
-          <span class="hero__status-dot" aria-hidden="true"></span>
-          Available for new opportunities
-        </div>
-
-        <!-- Name -->
-        <h1 class="hero__name">ASHUTOSH</h1>
-
-        <!-- Tagline -->
-        <p class="hero__tagline">Debugging in public.</p>
-
-        <!-- Description -->
-        <p class="hero__description">
-          I'm a developer who enjoys building things, solving problems and
-          exploring how technology works.
-        </p>
-
-        <!-- Terminal element -->
-        <div class="hero__terminal" aria-hidden="true">
-          <span class="hero__terminal-prompt">&gt;</span>
-          <span class="hero__terminal-text">building something useful...</span>
-          <span class="hero__terminal-cursor"></span>
-        </div>
-
-        <!-- CTAs -->
+  <main id="top">
+    <!-- Hero -->
+    <header class="hero">
+      <div>
+        <span class="pill glass"><span class="dot"></span>Founder, InfluencerTap · Senior Engineer, ANZ</span>
+        <h1 class="board" id="board" aria-label="Ashutosh Tiwari"></h1>
+        <p class="hero__line">I build <span class="word" id="word">AI systems</span></p>
+        <p class="hero__sub">I am an engineer and a founder. I design and build AI, data and cloud systems. I take each system from an empty cloud account to production.</p>
         <div class="hero__actions">
-          <a href="#projects" class="btn-primary" id="cta-projects">
-            View Projects
-          </a>
-          <a href="#about" class="btn-secondary" id="cta-about">
-            About Me <span class="arrow">→</span>
-          </a>
+          <a class="btn btn--solid" href="#ai">See the work <span class="arr">→</span></a>
+          <a class="btn btn--ghost" href="https://wa.me/919950822963" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.62.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.45 9.45 0 0 1-4.82-1.32l-.35-.2-3.58.94.96-3.49-.23-.36a9.43 9.43 0 0 1-1.45-5.03c0-5.22 4.25-9.47 9.48-9.47 2.53 0 4.91.99 6.7 2.78a9.4 9.4 0 0 1 2.77 6.7c0 5.22-4.25 9.46-9.47 9.46zm8.06-17.53A11.32 11.32 0 0 0 12.04.63C5.76.63.65 5.74.65 12.02c0 2.01.52 3.97 1.52 5.69L.55 23.6l6.04-1.58a11.36 11.36 0 0 0 5.44 1.39h.01c6.28 0 11.39-5.11 11.39-11.39 0-3.04-1.19-5.9-3.33-8.05z"/></svg>WhatsApp me</a>
         </div>
+      </div>
+    </header>
 
-        <!-- Social links -->
-        <div class="hero__socials">
-          <a href="#" class="social-link" data-social="github" target="_blank" rel="noopener noreferrer"
-            aria-label="GitHub profile">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-            </svg>
-          </a>
-          <a href="#" class="social-link" data-social="x" target="_blank" rel="noopener noreferrer"
-            aria-label="X (Twitter) profile">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-            </svg>
-          </a>
+    <!-- Proof -->
+    <div class="container">
+      <div class="proof glass reveal">
+        <div class="stat"><b>6+ yrs</b><span class="mono">Experience</span></div>
+        <div class="stat"><b>5+</b><span class="mono">AI products built</span></div>
+        <div class="stat"><b>10+</b><span class="mono">AI agents built</span></div>
+        <div class="stat"><b>500+</b><span class="mono">Pipelines built</span></div>
+        <div class="stat"><b>TB/day</b><span class="mono">Data processed</span></div>
+        <div class="stat"><b>99.9%</b><span class="mono">Platform uptime</span></div>
+      </div>
+    </div>
+
+    <!-- AI case study -->
+    <section id="ai">
+      <div class="container">
+        <span class="eyebrow mono reveal">Featured AI work</span>
+        <h2 class="title reveal">Company knowledge,<br>found with one question.</h2>
+        <p class="lead reveal">A custom RAG (retrieval-augmented generation) assistant. It gives answers from the documents, wikis and policies of an organisation.</p>
+
+        <article class="case glass reveal">
+          <div>
+            <span class="mono">Case study · Enterprise knowledge assistant</span>
+            <h3>Custom RAG chatbot for an organisation knowledge base</h3>
+            <p class="case__intro">Teams spent hours to find answers in wikis, shared drives, PDFs and tickets. Some information was duplicated or out of date. I designed and built a private AI assistant. It answers from the organisation's own content and shows the source of each answer.</p>
+
+            <div class="case__block">
+              <h4>What I built</h4>
+              <ul class="ticks">
+                <li><b>Ingestion:</b> Connectors collect documents, wikis, PDFs and FAQs. The pipeline cleans the content, removes duplicates and syncs each change.</li>
+                <li><b>Retrieval:</b> The system splits content by structure and stores embeddings in a vector database. Hybrid search and re-ranking find the most relevant text.</li>
+                <li><b>Grounded answers:</b> Each answer shows its source documents. When the assistant does not know the answer, it says so.</li>
+                <li><b>Access control:</b> Users get answers only from content that they have permission to see.</li>
+                <li><b>Private hosting:</b> The models run in the organisation's cloud. Data does not leave the organisation.</li>
+                <li><b>Quality:</b> A test set of real questions measures accuracy. Users give feedback in the chat. Monitoring tracks accuracy, latency and cost.</li>
+              </ul>
+            </div>
+
+            <div class="case__block">
+              <h4>Impact</h4>
+              <div class="outcomes">
+                <div class="outcome"><b>One knowledge base</b><span>All knowledge is in one searchable place.</span></div>
+                <div class="outcome"><b>Answers in seconds</b><span>Users do not search drives or wait for colleagues.</span></div>
+                <div class="outcome"><b>Faster onboarding</b><span>New employees find process and policy answers themselves.</span></div>
+              </div>
+            </div>
+
+            <div class="case__block chips">
+              <span class="chip">LLMs</span><span class="chip">RAG</span><span class="chip">Embeddings</span><span class="chip">Vector DB</span><span class="chip">Hybrid search</span><span class="chip">Re-ranking</span><span class="chip">Access control</span><span class="chip">Model serving</span><span class="chip">Evaluation</span><span class="chip">Guardrails</span>
+            </div>
+          </div>
+
+          <div class="flow" aria-label="Architecture of the assistant">
+            <span class="mono flow__label">How it works</span>
+            <div class="node"><i>01</i><div><b>Sources</b><span>Wikis, shared drives, PDFs, policies and tickets</span></div></div>
+            <div class="wire"></div>
+            <div class="node"><i>02</i><div><b>Ingest and clean</b><span>Parse, remove duplicates, split by structure, track changes</span></div></div>
+            <div class="wire"></div>
+            <div class="node"><i>03</i><div><b>Embed and index</b><span>Store vectors, keywords and access data</span></div></div>
+            <div class="wire"></div>
+            <div class="node"><i>04</i><div><b>Retrieve and re-rank</b><span>Hybrid search, filtered by user permissions</span></div></div>
+            <div class="wire"></div>
+            <div class="node"><i>05</i><div><b>Generate</b><span>A private LLM writes the answer from the retrieved text</span></div></div>
+            <div class="wire"></div>
+            <div class="node"><i>06</i><div><b>Answer with sources</b><span>The chat shows citations and collects feedback</span></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="container">
+        <span class="eyebrow mono reveal">Experience</span>
+        <h2 class="title reveal">Large systems, built from zero.</h2>
+        <p class="lead reveal">I build platforms that other teams use. These environments need high reliability and strict compliance.</p>
+
+        <div class="xp">
+          <!-- ANZ -->
+          <article class="role glass reveal">
+            <div class="role__side">
+              <h3>ANZ</h3>
+              <span class="t">Senior Engineer</span>
+              <span class="mono">Apr 2024 – Present · Bengaluru</span>
+              <div class="chips">
+                <span class="chip">AWS</span><span class="chip">Terraform</span><span class="chip">Kubernetes</span><span class="chip">Airflow</span><span class="chip">Spark</span><span class="chip">Kafka</span><span class="chip">Trino</span><span class="chip">ClickHouse</span><span class="chip">dbt</span><span class="chip">MLflow</span><span class="chip">SageMaker</span><span class="chip">Jenkins</span><span class="chip">GitHub Actions</span><span class="chip">DevSecOps</span>
+              </div>
+            </div>
+            <div>
+              <p class="role__summary">ANZ is one of the largest banks in Australia and New Zealand. I build its foundations: the cloud infrastructure for applications, the data platform, and the path from AI experiment to production.</p>
+
+              <div class="area">
+                <h4>Infrastructure for applications, from zero <em>Cloud</em></h4>
+                <ul class="ticks">
+                  <li>I designed and built the AWS foundation from an empty account. It includes networking, compute, storage, IAM (identity and access management) and security boundaries.</li>
+                  <li>Terraform defines all infrastructure as code. Reusable modules keep development, staging and production the same.</li>
+                  <li>Kubernetes runs the application and model workloads.</li>
+                </ul>
+              </div>
+
+              <div class="area">
+                <h4>DevOps and security <em>DevSecOps</em></h4>
+                <ul class="ticks">
+                  <li>I standardised CI/CD (continuous integration and delivery) on Jenkins and GitHub Actions. All releases are automatic and version-controlled.</li>
+                  <li>Each environment uses least-privilege IAM, private networks, network segmentation and managed secrets.</li>
+                  <li>The platform encrypts data in transit and at rest.</li>
+                  <li>Automated scans check infrastructure code and containers for vulnerabilities before production.</li>
+                  <li>Audit logs, monitoring and alerts meet the controls of a regulated bank.</li>
+                </ul>
+              </div>
+
+              <div class="area">
+                <h4>Data platform, from zero <em>Platform</em></h4>
+                <ul class="ticks">
+                  <li>I built <b>MACP</b>, a multi-tenant Airflow platform on Astronomer. Each team deploys its own pipelines into an isolated workspace.</li>
+                  <li>I built and run <b>500+ pipelines</b> on Airflow and Spark. They process <b>terabytes of data each day</b> at <b>99.9% uptime</b>.</li>
+                  <li>I added <b>Trino</b> as a federated query layer. Analysts query data in S3 and Teradata without copying it.</li>
+                  <li>I designed the warehouse model with Star, Snowflake and Data Vault patterns. dbt controls transformations, lineage and data contracts.</li>
+                  <li><b>ClickHouse</b> serves complex analytical queries in less than one second.</li>
+                </ul>
+              </div>
+
+              <div class="area">
+                <h4>Real-time systems <em>Streaming</em></h4>
+                <ul class="ticks">
+                  <li>I built ingestion with Kafka and Spark Streaming for high-volume event data. Live, monitored streams replaced slow batch jobs.</li>
+                </ul>
+              </div>
+
+              <div class="area">
+                <h4>AI and MLOps <em>AI</em></h4>
+                <ul class="ticks">
+                  <li>I set up the ML platform. MLflow tracks experiments. SageMaker trains and deploys models. Kubernetes serves the models.</li>
+                  <li>I built AI agents for <b>automated code review</b> and <b>synthetic data generation</b>. Code reviews are faster. Teams no longer wait days for compliant test data.</li>
+                </ul>
+              </div>
+
+              <div class="area">
+                <h4>Architecture and leadership <em>Team</em></h4>
+                <ul class="ticks">
+                  <li>I am a member of the architecture and design group. The group sets standards for pipelines, data contracts and observability.</li>
+                  <li>I mentor junior engineers and interns until they become reliable core-team members.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- InfluencerTap -->
+          <article class="role glass reveal">
+            <div class="role__side">
+              <h3>InfluencerTap</h3>
+              <span class="t">Founder</span>
+              <span class="mono">2026 – Present</span>
+              <div class="chips"><span class="chip">Next.js</span><span class="chip">Django</span><span class="chip">PostgreSQL</span><span class="chip">Qdrant</span><span class="chip">Playwright</span><span class="chip">Terraform</span></div>
+            </div>
+            <div>
+              <p class="role__summary">InfluencerTap is an AI platform for creator discovery and campaign management. It serves brands in India. I designed and built all of it: product, data, AI and infrastructure.</p>
+              <div class="area">
+                <h4>What I built <em>Product</em></h4>
+                <ul class="ticks">
+                  <li>A data service collects creator profiles and content at scale.</li>
+                  <li>Semantic search uses embeddings in a vector database. Brands search by meaning, not only by keywords.</li>
+                  <li>One app manages discovery, offers, content review and payments.</li>
+                  <li>Terraform defines the production infrastructure on AWS. Deployments are automatic.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kantar -->
+          <article class="role glass reveal">
+            <div class="role__side">
+              <h3>Kantar</h3>
+              <span class="t">Data Engineer</span>
+              <span class="mono">Jan 2022 – Mar 2024 · Bengaluru</span>
+              <div class="chips"><span class="chip">dbt</span><span class="chip">Dimensional modelling</span><span class="chip">Python</span><span class="chip">SQL</span></div>
+            </div>
+            <div>
+              <p class="role__summary">Kantar is one of the largest data and insights companies in the world. I built the analytics foundation for its marketing intelligence.</p>
+              <div class="area">
+                <ul class="ticks">
+                  <li>I built analytics infrastructure for ad data from many platforms. It cut warehouse cost by <b>20%</b>.</li>
+                  <li>I built pipelines for customer acquisition cost, lifetime value and return on investment. They improved campaign efficiency by <b>35%</b>.</li>
+                  <li>I built a low-latency data mart for loyalty programmes. It improved operational efficiency by <b>25%</b>.</li>
+                  <li>I designed <b>DART</b>, a framework for daily anomaly detection and data validation.</li>
+                  <li>I received the <b>Sirius Award</b> two times: Rising Star and Client Impact.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Earlier -->
+          <article class="role role--small glass reveal">
+            <div class="role__side">
+              <h3>Earlier</h3>
+              <span class="mono">2020 – 2021</span>
+            </div>
+            <div>
+              <ul class="ticks">
+                <li><b>Corpusvision, Data Engineer Intern:</b> I built a market data scraping engine for 100+ listed companies.</li>
+                <li><b>Amazon, Technical Support Associate:</b> I fixed device, network and deployment problems for enterprise customers.</li>
+                <li><b>NIET Noida, B.Tech in Electronics and Communication:</b> I moved into engineering through self-study.</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ========================================
-         ABOUT
-         ======================================== -->
-    <section class="section" id="about">
+    <!-- Projects -->
+    <section id="projects">
       <div class="container">
-        <span class="section__label reveal">About</span>
-        <h2 class="section__heading reveal">A little about me.</h2>
-        <div class="section__divider reveal"></div>
-
-        <div class="about__content">
-          <p class="about__text reveal">
-            I'm a software engineer who enjoys turning ideas into working products.
-          </p>
-          <p class="about__text reveal">
-            I work with data, backend systems and modern technologies.
-          </p>
-          <p class="about__text reveal">
-            I believe the best way to learn is to build, experiment and share.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================
-         PROJECTS
-         ======================================== -->
-    <section class="section" id="projects">
-      <div class="container">
-        <span class="section__label reveal">Projects</span>
-        <h2 class="section__heading reveal">Things I've built.</h2>
-        <div class="section__divider reveal"></div>
-
-        <div class="projects__grid" id="projects-grid">
-          <!-- Rendered by script.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================
-         WRITING
-         ======================================== -->
-    <section class="section" id="writing">
-      <div class="container">
-        <span class="section__label reveal">Writing</span>
-        <h2 class="section__heading reveal">Thoughts, experiments &amp; notes.</h2>
-        <div class="section__divider reveal"></div>
-
-        <div class="writing__content reveal">
-          <p class="writing__desc">
-            I share ideas, experiments and notes on X. Follow along for thoughts
-            on engineering, building products and learning in public.
-          </p>
-          <a href="#" class="writing__link" id="writing-link" target="_blank" rel="noopener noreferrer"
-            aria-label="Follow on X (Twitter)">
-            Follow <span id="x-handle">@IlluminaughtyIN</span> on X
-            <span class="arrow">→</span>
+        <span class="eyebrow mono reveal">Projects</span>
+        <h2 class="title reveal">More AI and systems work.</h2>
+        <div class="projects">
+          <a class="card glass reveal" href="https://github.com/atiwari-dev/rag-sql-assistant">
+            <div class="card__top"><span class="mono">RAG · Private LLM</span><span class="go">↗</span></div>
+            <h3>Talk-to-your-database assistant</h3>
+            <p>Users ask questions about a banking database in plain English. Schema-based retrieval guides a local LLM to write safe, read-only SQL. The data stays on the machine.</p>
+            <div class="chips"><span class="chip">Ollama</span><span class="chip">Embeddings</span><span class="chip">Django</span><span class="chip">React</span></div>
           </a>
+          <div class="card glass reveal">
+            <div class="card__top"><span class="mono">AI agent</span></div>
+            <h3>AI data analyst</h3>
+            <p>Users upload a dataset and ask a question. The agent cleans the data, runs the analysis and writes a report. The work takes minutes, not hours.</p>
+            <div class="chips"><span class="chip">LangChain</span><span class="chip">GPT-4</span><span class="chip">Pandas</span></div>
+          </div>
+          <div class="card glass reveal">
+            <div class="card__top"><span class="mono">Real-time</span></div>
+            <h3>Event streaming platform</h3>
+            <p>Kafka and Spark Streaming process 1M+ events each day with sub-second latency. This platform replaced batch jobs that ran every 4 hours.</p>
+            <div class="chips"><span class="chip">Kafka</span><span class="chip">Spark Streaming</span></div>
+          </div>
+          <div class="card glass reveal">
+            <div class="card__top"><span class="mono">Lakehouse</span></div>
+            <h3>Enterprise data warehouse</h3>
+            <p>I built a Databricks Delta Lake lakehouse from zero. It combines many data sources and cuts average query time by 40%.</p>
+            <div class="chips"><span class="chip">Databricks</span><span class="chip">Delta Lake</span></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ========================================
-         CONTACT
-         ======================================== -->
-    <section class="section" id="contact">
+    <!-- Capabilities -->
+    <section id="capabilities">
       <div class="container">
-        <span class="section__label reveal">Contact</span>
-        <h2 class="section__heading reveal">Have something interesting in mind?</h2>
-        <div class="section__divider reveal"></div>
+        <span class="eyebrow mono reveal">Capabilities</span>
+        <h2 class="title reveal">From the model to the infrastructure.</h2>
+        <div class="caps">
+          <div class="cap glass reveal"><h3>AI and MLOps</h3><ul><li>RAG and knowledge assistants</li><li>Custom model setup and fine-tuning</li><li>Model inference and serving</li><li>AI agents and evaluation</li><li>MLflow and SageMaker pipelines</li></ul></div>
+          <div class="cap glass reveal"><h3>Data platforms</h3><ul><li>Batch and streaming pipelines</li><li>Warehouses and lakehouses</li><li>Federated query</li><li>Data modelling and contracts</li><li>Data quality and observability</li></ul></div>
+          <div class="cap glass reveal"><h3>Cloud and DevOps</h3><ul><li>AWS and GCP from zero</li><li>Terraform, infrastructure as code</li><li>Kubernetes and Docker</li><li>CI/CD: Jenkins, GitHub Actions</li><li>Monitoring and incident response</li></ul></div>
+          <div class="cap glass reveal"><h3>Cybersecurity</h3><ul><li>IAM and least-privilege access</li><li>Network segmentation</li><li>Secrets and encryption</li><li>Vulnerability and policy scans</li><li>Audit and compliance controls</li></ul></div>
+        </div>
+      </div>
+    </section>
 
-        <div class="contact__content">
-          <p class="contact__desc reveal">
-            I'm always interested in interesting ideas, technical conversations
-            and opportunities to build.
-          </p>
+    <!-- Recognition -->
+    <section id="recognition">
+      <div class="container">
+        <span class="eyebrow mono reveal">Recognition</span>
+        <h2 class="title reveal">Awards and certifications.</h2>
+        <div class="awards">
+          <div class="award glass reveal"><span class="mono">Kantar · ×2</span><b>Sirius Award</b><p>Rising Star and Client Impact awards for technical work.</p></div>
+          <div class="award glass reveal"><span class="mono">Hackathon</span><b>Runner-up of 600+</b><p>A CNN model for fraud detection with geospatial data.</p></div>
+          <div class="award glass reveal"><span class="mono">Certification</span><b>IBM Data Engineer</b><p>Professional certificate in data engineering.</p></div>
+        </div>
+      </div>
+    </section>
 
-          <div class="contact__links reveal">
-            <a href="#" class="contact__link" data-social="github" target="_blank" rel="noopener noreferrer"
-              aria-label="GitHub profile">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" aria-hidden="true">
-                <path
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-              </svg>
-              GitHub
-              <span class="arrow">→</span>
-            </a>
-
-            <a href="#" class="contact__link" data-social="x" target="_blank" rel="noopener noreferrer"
-              aria-label="X (Twitter) profile">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-              </svg>
-              X (Twitter)
-              <span class="arrow">→</span>
-            </a>
-
-            <a href="#" class="contact__link" data-social="email" aria-label="Send an email">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" aria-hidden="true">
-                <rect width="20" height="16" x="2" y="4" rx="2" />
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-              </svg>
-              Email
-              <span class="arrow">→</span>
-            </a>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact glass reveal">
+          <span class="mono">Contact</span>
+          <h2>Talk to me about<br>AI and systems.</h2>
+          <p>Do you build with AI or with data at scale? Send me an email.</p>
+          <a class="btn btn--solid" href="mailto:ashuxtosh@gmail.com">ashuxtosh@gmail.com <span class="arr">→</span></a>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/ashuhimself" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="https://github.com/atiwari-dev" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            <a href="https://x.com/IlluminaughtyIN" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ========================================
-       FOOTER
-       ======================================== -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p class="footer__text">Designed &amp; built by Ashutosh.</p>
-      <div class="footer__links">
-        <a href="#" class="footer__link" data-social="github" target="_blank" rel="noopener noreferrer"
-          aria-label="GitHub">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path
-              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-          </svg>
-        </a>
-        <a href="#" class="footer__link" data-social="x" target="_blank" rel="noopener noreferrer"
-          aria-label="X (Twitter)">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-          </svg>
-        </a>
-      </div>
-    </div>
+  <footer class="container mono">
+    <span>© 2026 Ashutosh Tiwari</span>
+    <span>AI · Data · Systems</span>
   </footer>
 
-  <!-- Script -->
   <script src="script.js"></script>
 </body>
-
 </html>
